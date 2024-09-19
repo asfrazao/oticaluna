@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ótica Luna - Página Inicial</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+<header class="bg-dark text-white text-center py-3">
+  <h1>Ótica Luna</h1>
+  <nav>
+    <a href="index.html" class="text-white">Home</a> |
+    <a href="produtos.html" class="text-white">Produtos</a> |
+    <a href="contato.html" class="text-white">Contato</a>
+  </nav>
+</header>
+
+<main class="container mt-4">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://picsum.photos/800/300?random=1" alt="Promoção de Óculos">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://picsum.photos/800/300?random=2" alt="Novos Lançamentos">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://picsum.photos/800/300?random=3" alt="Descontos Especiais">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+
+  <section class="mt-4">
+    <h2>Produtos em Destaque</h2>
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <img src="https://picsum.photos/300/200?random=4" class="img-fluid" alt="Óculos 1">
+        <h4>Óculos de Sol</h4>
+        <p>R$ 199,99</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <img src="https://picsum.photos/300/200?random=5" class="img-fluid" alt="Óculos 2">
+        <h4>Óculos de Grau</h4>
+        <p>R$ 299,99</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <img src="https://picsum.photos/300/200?random=6" class="img-fluid" alt="Óculos 3">
+        <h4>Óculos Esportivo</h4>
+        <p>R$ 399,99</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-3 mt-4">
+  <p>&copy; 2024 Ótica Luna - Todos os direitos reservados</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

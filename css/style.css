@@ -1,0 +1,117 @@
+/* Base Styles */
+html {
+  color: #222;
+  font-size: 16px; /* Melhor legibilidade */
+  line-height: 1.5; /* Melhor espaçamento de texto */
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+}
+
+/* Reseta o espaçamento para mídia */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+  max-width: 100%; /* Para garantir que sejam responsivos */
+}
+
+fieldset {
+  border: 0;
+}
+
+/* Restringe o redimensionamento */
+textarea {
+  resize: vertical;
+}
+
+/* Custom Helper Classes */
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  /* Estilos para telas maiores */
+}
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* Customização para acessibilidade e legibilidade */
+a:focus,
+button:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* Para imagens responsivas */
+}
+
+p {
+  orphans: 3;
+  widows: 3;
+}

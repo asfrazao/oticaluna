@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ótica Luna - Contato</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+<header class="bg-dark text-white text-center py-3">
+  <h1>Ótica Luna</h1>
+  <nav>
+    <a href="index.html" class="text-white">Home</a> |
+    <a href="produtos.html" class="text-white">Produtos</a> |
+    <a href="contato.html" class="text-white">Contato</a>
+  </nav>
+</header>
+
+<main class="container mt-4">
+  <h2>Fale Conosco</h2>
+  <form>
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+    </div>
+    <div class="form-group">
+      <label for="mensagem">Mensagem</label>
+      <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+
+  <!-- Seção de mapa para localizações da Ótica Luna -->
+  <section class="container mt-5">
+    <h2 class="text-center">Localizações da Ótica Luna</h2>
+    <p class="text-center">Encontre a Ótica Luna mais próxima de você.</p>
+
+    <div class="map-container mt-4">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.8930191140327!2d-46.5856349!3d-23.535786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMynzA5LjIiUyA0NsKwMzUnMDguMyJX!5e0!3m2!1spt-BR!2sbr!4v1639072859694!5m2!1spt-BR!2sbr"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="text-center mt-4">
+      <button class="btn btn-warning">Encontrar a localização mais próxima</button>
+    </div>
+  </section>
+  <!-- Fim da seção de mapa -->
+</main>
+
+<footer class="bg-dark text-white text-center py-3 mt-4">
+  <p>&copy; 2024 Ótica Luna - Todos os direitos reservados</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
